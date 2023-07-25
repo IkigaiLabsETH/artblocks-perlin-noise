@@ -7,7 +7,7 @@ let particle_sets = [];
 let palette;
 
 function setup() {
-  createCanvas(1200, 1200);
+  createCanvas(2000, 2000);
   THE_SEED = floor(random(9999999));
   randomSeed(THE_SEED);
 

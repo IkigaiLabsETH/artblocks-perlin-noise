@@ -2,10 +2,6 @@ var colorPalettes;
 var currentPalette;
 
 colorPalettes = [
-['#000000', '#d55a3a', '#2a5c8a', '#7e7d14', '#dbdac9'],
-['#dbdac9', '#d55a3a', '#2a5c8a', '#b47b8c', '#7e7d14'],
-['#dbdac9', '#d55a3a', '#2a5c8a'],
-['#dbdac9', '#d55a3a', '#7e7d14'],
 ['#e3dd34', '#78496b', '#f0527f', '#a7e0e2'],
 ['#ffce49', '#ede8dc', '#ff5736', '#ff99b4'],
 ['#5c5f46', '#ff7044', '#ffce39', '#66aeaa'],
@@ -20,10 +16,10 @@ colorPalettes = [
 ['#ce565e', '#8e1752', '#f8a100', '#3ac1a6'],
 ['#f5736a', '#925951', '#feba4c', '#9d9b9d'],
 ];
-currentPalette = colorPalettes[0];  // start with first palette
+currentPalette = colorPalettes[3];  // start with first palette
 
 function setup() {
-  createCanvas(768, 768);
+  createCanvas(2000, 2000);
   noLoop();
 }
 
@@ -32,8 +28,8 @@ function draw() {
     currentPalette.splice(int(random(currentPalette.length)), 1)[0]);
   
     createSandTexture();
-    strokeWeight(0.420);
-    var nCellCols = 17;
+    strokeWeight(1.420);
+    var nCellCols = 5;
     var nCellRows = nCellCols;
     var cellW = width / nCellCols;
     var cellW2 = cellW / 2;
@@ -100,7 +96,7 @@ function draw() {
   }
   
   function createSandTexture() {
-    background(245, 222, 179);  // wheat color for sand
+    background(247, 243, 232);  // 
     for (let i = 0; i < width; i++) {
       for (let j = 0; j < height; j++) {
         if (random() < 5) {  // change this value to have more or less sand texture

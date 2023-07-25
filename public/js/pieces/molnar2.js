@@ -2,12 +2,24 @@ var colorPalettes;
 var currentPalette;
 
 colorPalettes = [
-  ["#62b6de", "#2b67af", "#f589a3", "#007f5f", "#2b9348", "#55a630", "#80b918", "#aacc00", "#bfd200", "#d4d700", "#dddf00", "#eeef20", "#ffff3f", "#fffbe6", "#f5d216", "#0077e1", "#050505"]
+  ['#e3dd34', '#78496b', '#f0527f', '#a7e0e2'],
+  ['#ffce49', '#ede8dc', '#ff5736', '#ff99b4'],
+  ['#5c5f46', '#ff7044', '#ffce39', '#66aeaa'],
+  ['#553c60', '#ffb0a0', '#ff6749', '#fbe090'],
+  ['#bbd444', '#fcd744', '#fa7b53', '#423c6f'],
+  ['#0d4a4e', '#ff947b', '#ead3a2', '#5284ab'],
+  ['#363d4a', '#7b8a56', '#ff9369', '#f4c172'],
+  ['#ec6c26', '#613a53', '#e8ac52', '#639aa0'],
+  ['#d3693e', '#803528', '#f1b156', '#90a798'],
+  ['#f46e26', '#68485f', '#3d273a', '#535d55'],
+  ['#ea720e', '#ca5130', '#e9c25a', '#52534f'],
+  ['#ce565e', '#8e1752', '#f8a100', '#3ac1a6'],
+  ['#f5736a', '#925951', '#feba4c', '#9d9b9d'],
 ];
-currentPalette = colorPalettes[0];  // start with first palette
+currentPalette = colorPalettes[4];  // start with first palette
 
 function setup() {
-  createCanvas(768, 768);
+  createCanvas(2000, 2000);
   noLoop();
 }
 
@@ -16,7 +28,7 @@ function draw() {
     currentPalette.splice(int(random(currentPalette.length)), 1)[0]);
   
     createSandTexture();
-    strokeWeight(0.5);
+    strokeWeight(2.5);
     var nCellCols = 17;
     var nCellRows = nCellCols;
     var cellW = width / nCellCols;
@@ -84,7 +96,7 @@ function draw() {
   }
   
   function createSandTexture() {
-    background(245, 222, 179);  // wheat color for sand
+    background(115, 139, 224);  // wheat color for sand
     for (let i = 0; i < width; i++) {
       for (let j = 0; j < height; j++) {
         if (random() < 0.05) {  // change this value to have more or less sand texture
