@@ -119,9 +119,9 @@ const baseImageFuncs = [
     g.fill("black");
     g.textAlign(CENTER, BOTTOM);
 
-    g.textFont("Geologica");
+    g.textFont("IKIGAI");
     g.textSize(20);
-    g.text(["shibomb.xyz"].join("\n"), width / 2, height - padding);
+    g.text(["ikigailabs.xyz"].join("\n"), width / 2, height - padding);
   },
   (g) => {
     g.background(BGCOLOR);
@@ -131,19 +131,19 @@ const baseImageFuncs = [
     g.noStroke();
     g.fill(0);
 
-    g.textFont("Geologica");
+    g.textFont("IKIGAI");
     g.textSize(62);
 
     g.textAlign(LEFT, TOP);
     g.text(
-      ["PROCESSING", "COMMUNITY DAY", "TOKYO 2023"].join("\n"),
+      ["ALOHA", "GM", "GN"].join("\n"),
       padding,
       padding
     );
 
     g.textAlign(RIGHT, BOTTOM);
     g.text(
-      ["6/27-7/4", "SHIBUYA HIKARIE", "8/ CUBE 1,2,3"].join("\n"),
+      ["GE", "IKIGAI", "GM"].join("\n"),
       width - padding,
       height - padding
     );
@@ -161,11 +161,11 @@ const baseImageFuncs = [
     g.noStroke();
     g.fill("#ED2252");
 
-    g.textFont("Geologica");
+    g.textFont("IKIGAI");
     g.textSize(128);
 
     g.textAlign(LEFT, TOP);
-    g.text(["p5.js", "i18n-ja"].join("\n"), padding, padding);
+    g.text(["p5.js", "LFG"].join("\n"), padding, padding);
 
     g.strokeWeight(4);
     g.stroke(0);
@@ -174,7 +174,7 @@ const baseImageFuncs = [
     g.textSize(62);
     g.textAlign(RIGHT, BOTTOM);
     g.text(
-      ["Let's contribute", "for BEGINNER", "and FUTURE!!"].join("\n"),
+      ["GM", "GM", "and GM"].join("\n"),
       width - padding,
       height - padding
     );
